@@ -19,11 +19,9 @@ import pandas as pd
 from pandas.core.dtypes.missing import notnull
 
 
-prazo_entrega = int(sys.argv[2])
+prazo_entrega = int(sys.argv[2]) 
 CURR_DIR = os.getcwd()
 cotações_original_file = os.path.join(CURR_DIR, sys.argv[1])
-print(cotações_original_file)
-
 csv_data = {
     'Referencia': [],
     'Designacao': [],
@@ -40,7 +38,23 @@ header = data.columns
 
 elements = data['Referencia'].drop_duplicates()
 
-data['Total_preço'] = data['Preço'] * data['MOQ']
+ind_count = data['Preço'].count()
+data['divider'] = data['QT'] / data['MOQ']
+
+
+for ind in range(ind_count):
+    if data['divider'].iloc[ind] > 1:
+        product = data['divider'].iloc[ind]
+        product_int = data['divider'].iloc[ind].astype(int)
+        if product % product_int > 0:
+            data.at[ind, 'divider'] = product_int + 1 # update cell values without errors
+        else:
+            data.at[ind, 'divider'] = product_int
+    else:
+        data.at[ind, 'divider'] = 1.0    
+
+data['Total_preço'] = data['Preço']* data['MOQ'] * data['divider']
+del data['divider']
 
 for e in elements:
     components = pd.DataFrame()
@@ -49,9 +63,9 @@ for e in elements:
     referencia = components['Referencia'].iloc[0]
     designacao = components['Designacao'].iloc[0]
     quantidade = components['QT'].iloc[0]
-    components_moq = components[(components['MOQ'] >= components['QT']) | ((components['Fornecedor'] == 'Tecmic') & (components['MOQ'] < components['QT']))] 
-    if not components_moq.empty:
-        components_deadline_date = components_moq[components_moq['Prazo (dias)'] <= prazo_entrega]
+    # components_moq = components[(components['MOQ'] >= components['QT']) | ((components['Fornecedor'] == 'Tecmic') & (components['MOQ'] < components['QT']))] 
+    if not components.empty:
+        components_deadline_date = components[components['Prazo (dias)'] <= prazo_entrega]
         if not components_deadline_date.empty:
             componentes_price_zero = components_deadline_date[components_deadline_date['Total_preço'] == 0]
             data_best_price = data_best_price.append(componentes_price_zero, ignore_index=True)

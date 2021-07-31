@@ -1,0 +1,33 @@
+Referencia,Designacao,Cod Fabricante,QT,Fornecedor,Preço,MOQ,Prazo (dias)
+OBTBT0001C,"Batería de Lítio CR2032 de 3,3V 220mAh Terminais Soldad",CR2032/1GU                    ,500,Elecronic Direct,0.65,500,4
+OBTBT0001C,"Batería de Lítio CR2032 de 3,3V 220mAh Terminais Soldad",CR2032/1GU                    ,500,Tecmic,0,350,0
+OBTBT0001C,"Batería de Lítio CR2032 de 3,3V 220mAh Terminais Soldad",CR2032/1GU                    ,500,TME,0.37,550,7
+OCEAP0002S,COMP. DUAL            TSSOP8,LM2903PW                      ,500,Ariat,0.116,500,3
+OCEAP0002S,COMP. DUAL            TSSOP8,LM2903PW                      ,500,EBV,0.092,2000,20
+OCEAP0002S,COMP. DUAL            TSSOP8,LM2903PW                      ,500,Elecronic Direct,0.145,500,4
+OCEAP0002S,COMP. DUAL            TSSOP8,LM2903PW                      ,500,Elecronic Direct,0.05,250,4
+OCEAP0002S,COMP. DUAL            TSSOP8,LM2903PW                      ,500,TME,0.0992,550,7
+OCEAP0003S,AMP. QUAD             TSSOP14,LM324PW                       ,500,Ariat,0.139,500,3
+OCEAP0003S,AMP. QUAD             TSSOP14,LM324PW                       ,500,EVB,0.212,500,4
+OCEAP0003S,AMP. QUAD             TSSOP14,LM324PW                       ,500,Elecronic Direct,0.14,500,4
+OCEAP0003S,AMP. QUAD             TSSOP14,LM324PW                       ,500,Rutronik,0.3315,2500,63
+OCEAP0003S,AMP. QUAD             TSSOP14,LM324PW                       ,500,Simento,0.098,500,7
+OCEAP0004S,AMP. SINGLE          DFN     LT6000,LT6000IDCB#TRMPBF             ,500,Ariat,1.7,500,3
+OCEAP0004S,AMP. SINGLE          DFN     LT6000,LT6000IDCB#TRMPBF             ,500,Elecronic Direct,1.3,500,4
+OCEAP0004S,AMP. SINGLE          DFN     LT6000,LT6000IDCB#TRMPBF             ,500,Simento,1.18,500,7
+OCEBB0006S,"BOBINE, 22uH, 20%, 7.57A, DR127",DR127-220-R                   ,1000,Ariat,0.72,1000,3
+OCEBB0006S,"BOBINE, 22uH, 20%, 7.57A, DR127",DR127-220-R                   ,1000,Ashlea,0.52,350,5
+OCEBB0006S,"BOBINE, 22uH, 20%, 7.57A, DR127",DR127-220-R                   ,1000,Elecronic Direct,0.92,1000,4
+OCEBB0006S,"BOBINE, 22uH, 20%, 7.57A, DR127",DR127-220-R                   ,1000,Simento,0.18,450,4
+OCEBB0006S,"BOBINE, 22uH, 20%, 7.57A, DR127",DR127-220-R                   ,1000,TTI,0.44,350,4
+OCEBB0008S,"BOBINE, 2.2uH, 20%, 1.35A, (5.2 x 5.2 x 1.0mm)",SD10-2R2-R                    ,1000,Ariat,0.24,1000,3
+OCEBB0008S,"BOBINE, 2.2uH, 20%, 1.35A, (5.2 x 5.2 x 1.0mm)",SD10-2R2-R                    ,1000,Elecronic Direct,1.35,1000,4
+OCEBB0008S,"BOBINE, 2.2uH, 20%, 1.35A, (5.2 x 5.2 x 1.0mm)",SD10-2R2-R                    ,1000,Simento,0.12,500,5
+OCEBB0010S,"FERRITE, 0.15R,  1A, 0603",MPZ1608D101B                  ,500,Ariat,0.023,500,3
+OCEBB0010S,"FERRITE, 0.15R,  1A, 0603",MPZ1608D101B                  ,500,Elecronic Direct,0.05,1000,4
+OCEBB0010S,"FERRITE, 0.15R,  1A, 0603",MPZ1608D101B                  ,500,Rutronik,0.018,4000,5
+OCEBB0010S,"FERRITE, 0.15R,  1A, 0603",MPZ1608D101B                  ,500,TTI,0.016,4000,5
+OCEBB0014S,"FERRITE, 0.1R,  1.5A, 0805",MI0805k110R-10                ,4000,Elecronic Direct,0.035,4000,4
+OCEBB0014S,"FERRITE, 0.1R,  1.5A, 0805",MI0805k110R-10                ,4000,Simento,0.0098,500,3
+OCEBB0015S,"Bobine, Modo Comum, 1mH, 30%,  0.8A, 9.2x6x5mm",SRF0905A-102Y                 ,500,Elecronic Direct,0.65,500,5
+OCEBB0015S,"Bobine, Modo Comum, 1mH, 30%,  0.8A, 9.2x6x5mm",SRF0905A-102Y                 ,500,TTI,0.45,2000,140

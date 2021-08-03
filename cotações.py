@@ -54,6 +54,15 @@ for ind in range(ind_count):
         data.at[ind, 'divider'] = 1.0    
 
 data['Total_preço'] = data['Preço']* data['MOQ'] * data['divider']
+data['Qt a encomendar'] = 0 
+
+for ind in range(ind_count):
+    if data['Preço'].iloc[ind] > 0:
+        data.at[ind, 'Qt a encomendar'] = data['MOQ'].iloc[ind] * data['divider'].iloc[ind] 
+        
+        
+
+
 del data['divider']
 
 for e in elements:
